@@ -3,7 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/Collaboration.css'; // Reusing the same CSS
 import io from'socket.io-client';
 import { useEffect } from 'react';
-const socket = io(import.meta.env.VITE_BACKEND_URL);
+const socket = io(import.meta.env.VITE_BACKEND_URL, {
+  transports: ["websocket", "polling"],
+  withCredentials: true
+});
+
 
 const Collaboration = () => {
   useEffect(() => {

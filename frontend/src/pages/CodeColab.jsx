@@ -8,7 +8,10 @@ import toast from 'react-hot-toast';
 //  import VideoChat from "./VideoChat";
 
 // Move socket OUTSIDE component scope to prevent re-connecting on re-renders
-const socket = io(import.meta.env.VITE_BACKEND_URL); // ✅ Replace with deployed URL if needed
+const socket = io(import.meta.env.VITE_BACKEND_URL ,{
+  transports: ["websocket", "polling"],
+  withCredentials: true,
+}); // ✅ Replace with deployed URL if needed
 const languages = {
     javascript: { id: 63, label: "JavaScript" },
     python: { id: 92, label: "Python" },
