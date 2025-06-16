@@ -18,7 +18,7 @@ const Problems = () => {
   useEffect(() => {
     const fetchProblems = async () => {
       try {
-        const response = await axios.get("/api/v1/problems",
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/v1/problems`,
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("accessToken"),

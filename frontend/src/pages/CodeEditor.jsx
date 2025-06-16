@@ -41,7 +41,7 @@ const CodeEditor = ({ testCases = [], problemId }) => {
     const addProblemToUser = async (problemId) => {
         try {
             const token = localStorage.getItem('accessToken');
-            await axios.post("/api/v1/problems/solved",
+            await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/v1/problems/solved`,
                 { problemId },
                 {
                     headers: {
@@ -108,7 +108,7 @@ const CodeEditor = ({ testCases = [], problemId }) => {
             setVerdict("✅ All Visible and Hidden test cases passed!");
             toast.success("✅ All test cases passed!", { id: toastId });
             addProblemToUser(problemId);
-            await axios.post("/api/v1/submissions", {
+            await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/v1/submissions`, {
                 problemId,
                 code,
                 language: selectedLang,

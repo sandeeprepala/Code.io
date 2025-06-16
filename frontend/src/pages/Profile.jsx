@@ -14,7 +14,7 @@ const Profile = () => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem('accessToken');
-        const res = await axios.get('/api/v1/users/profile', {
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/profile`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -46,7 +46,7 @@ const Profile = () => {
   }, [user]);
 
   const handleLogout = () => {
-    axios.post('/api/v1/users/logout',{},
+    axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/logout`,{},
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`,

@@ -23,7 +23,7 @@ const ProblemById = () => {
             try {
                 const token = localStorage.getItem('accessToken');
 
-                const response = await axios.get(`/api/v1/problems/${id}`, {
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/v1/problems/${id}`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -42,7 +42,7 @@ const ProblemById = () => {
     const fetchSubmissions = async () => {
         try {
             const token = localStorage.getItem('accessToken');
-            const response = await axios.get(`/api/v1/submissions/${id}`, {
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/v1/submissions/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

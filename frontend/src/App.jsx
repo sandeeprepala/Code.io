@@ -15,7 +15,7 @@ import Collaboration from './pages/Collaboration';
 import io from'socket.io-client';
 import { useEffect } from 'react';
 
-const socket = io("http://localhost:8000");
+const socket = io(import.meta.env.VITE_BACKEND_URL);
 function App() {
   useEffect(() => {
   return () => {
