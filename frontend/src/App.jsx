@@ -10,7 +10,7 @@ import Register from './components/Register';
 import Logout from './components/Logout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProblemById from './pages/ProblemById';
-import CodeColab from './pages/codeColab';
+import CodeColab from './pages/CodeColab';
 import Collaboration from './pages/Collaboration';
 import io from'socket.io-client';
 import { useEffect } from 'react';
