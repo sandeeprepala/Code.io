@@ -6,7 +6,7 @@ import cookieParser from 'cookie-parser';
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173", 
+  origin: "code-121df2im1-sandeeprepala3-gmailcoms-projects.vercel.app", 
   credentials: true             
 }));
 
