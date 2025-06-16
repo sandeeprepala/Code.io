@@ -1,0 +1,18 @@
+# Ignore all node_modules (in frontend/ or backend/)
+**/node_modules
+
+# Ignore environment variables in both frontend and backend
+frontend/.env
+backend/.env
+
+# Or ignore all .env files in any subdirectory
+**/.env
+
+# Ignore build outputs
+frontend/dist/
+backend/dist/
+frontend/build/
+backend/build/
+
+# Ignore logs
+**/*.log

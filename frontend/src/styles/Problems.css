@@ -1,0 +1,190 @@
+/* Container styling */
+.problems-container {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(26 26 26);
+  min-height: 100vh;
+}
+
+/* Header */
+.problems-container h2 {
+  margin-bottom: 15px;
+  margin-top: 60px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.search-bar {
+  width: 98%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(40 40 40);
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  color: #e4e4e4;
+}
+
+
+/* Filters */
+.filters {
+  margin-bottom: 15px;
+  padding: 8px;
+  
+}
+
+.filters select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #cfcfcf;
+  border: 1px solid rgb(40 40 40) ;
+  background-color: rgb(40 40 40);
+}
+
+/* Topic Tags */
+.topic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  
+}
+
+.topic-tag {
+  background-color: #e4e4e4;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+  border: 1px solid rgb(40 40 40) ;
+  background-color: rgb(40 40 40);
+  color: #cfcfcf;
+}
+
+.topic-tag:hover {
+  background-color: #3d3d3d;
+}
+
+.topic-tag.active {
+  background-color: #d07d00;
+  color: white;
+}
+
+/* Clear Filter */
+.clear-filter {
+  color: #d07d00;
+  font-weight: 500;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Problem Cards */
+.problems-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.problem-card {
+  background-color: white;
+  padding: 14px 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+    background-color: rgb(40 40 40)
+}
+
+.problem-card:hover {
+  transform: scale(1.01);
+}
+
+/* Title & Difficulty */
+.problem-card h3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #cfcfcf;
+}
+
+.problem-card .difficulty {
+  font-weight:400;
+  font-size:medium;
+  margin-top: 5px;
+}
+
+.difficulty.easy {
+  background-color: #014605;
+  color: #00ff55d6;
+  border-radius: 30px;
+}
+
+.difficulty.medium {
+  background-color: #463400;
+  color: #ffcc00;
+  border-radius: 30px;
+}
+
+.difficulty.hard {
+  color: rgb(255, 0, 0);
+  background-color: rgb(81, 0, 0);
+  border-radius: 30px;
+}
+
+/* Tags */
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  background-color:  rgba(112, 112, 112, 0.297);
+}
+
+.solved-badge {
+  background-color: #4caf50;
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 8px;
+  border-radius: 12px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.problem-header {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.filter.active {
+  background-color: #b17000d3;
+  border-radius: 20px;
+  color: white;
+  border: 1px solid #d18400;
+  width: max-content;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 15px
+}
+.filter.not{
+  background-color: #4caf50;
+  border-radius: 20px;
+  color: white;
+  width: max-content;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 15px
+}

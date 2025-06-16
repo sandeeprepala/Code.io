@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(26, 26, 26);
+  font-family: 'Poppins', sans-serif;
+  color: #d07d00;
+}
+
+.profile-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-heading {
+    margin-top: 80px;
+  font-size: 2rem;
+  color: #d07d00;
+  margin-bottom: 2rem;
+}
+
+.profile-card {
+  background-color: rgb(40, 40, 40);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.profile-label {
+  font-weight: bold;
+  color: #ff9900;
+}
+
+.profile-value {
+  color: #f5deb3;
+}
+
+.profile-error {
+  text-align: center;
+  margin-top: 2rem;
+  color: red;
+  font-weight: bold;
+}
+
+.profile-loading {
+  text-align: center;
+  margin-top: 2rem;
+  color: #ff9900;
+}
+.profile-logout-button {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #d07d00;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.profile-logout-button:hover {
+  background-color: #ff9900;
+  color: #000;
+}
+
