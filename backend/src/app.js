@@ -6,7 +6,8 @@ import cookieParser from 'cookie-parser';
 const app = express();
 
 app.use(cors({
-  origin: true, // Allow any origin to access the API
+  // Specify the origin of the API. Set this to true if you want to allow any origin, or provide an array of allowed origins.
+  origin: "https://code-io-wjsp-9m5ujk68n-sandeeprepala3-gmailcoms-projects.vercel.app", // Allow any origin to access the API
   credentials: true             
 }));
 
