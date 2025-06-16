@@ -6,7 +6,7 @@ import cookieParser from 'cookie-parser';
 const app = express();
 
 app.use(cors({
-  origin: "https://code-121df2im1-sandeeprepala3-gmailcoms-projects.vercel.app", 
+  origin: "https://code-io-wjsp-bpbq1vb4j-sandeeprepala3-gmailcoms-projects.vercel.app", 
   credentials: true             
 }));
 

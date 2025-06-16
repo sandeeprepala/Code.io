@@ -9,12 +9,7 @@ import { app } from './app.js';
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: [
-      "http://localhost:3000",
-      "https://code-121df2im1-sandeeprepala3-gmailcoms-projects.vercel.app",
-      "https://code-1mdyqentj-sandeeprepala3-gmailcoms-projects.vercel.app",
-      "https://code-7d1y4g89p-sandeeprepala3-gmailcoms-projects.vercel.app", // ✅ Newly added
-    ],
+    origin: "https://code-io-wjsp-bpbq1vb4j-sandeeprepala3-gmailcoms-projects.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   },
