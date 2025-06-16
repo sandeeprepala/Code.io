@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 import io from "socket.io-client";
 import Peer from "simple-peer";
 
-const socket = io("http://localhost:8000"); // Replace with backend URL
+const socket = io(import.meta.env.VITE_BACKEND_URL); // Replace with backend URL
 
 const VideoChat = ({ roomId }) => {
   const localVideo = useRef();

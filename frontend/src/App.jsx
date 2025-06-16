@@ -17,11 +17,11 @@ import { useEffect } from 'react';
 
 // const socket = io(import.meta.env.VITE_BACKEND_URL);
 function App() {
-  useEffect(() => {
-  return () => {
-    socket.disconnect();
-  };
-}, []);
+//   useEffect(() => {
+//   return () => {
+//     socket.disconnect();
+//   };
+// }, []);
 
   return (
     <>
