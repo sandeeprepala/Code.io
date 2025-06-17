@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors({
   // Specify the origin of the API. Set this to true if you want to allow any origin, or provide an array of allowed origins.
-  origin: "https://code-io-wjsp-51k3pxxnm-sandeeprepala3-gmailcoms-projects.vercel.app", // Allow any origin to access the API
+  origin: "https://code-io-wjsp-iiz4kymmk-sandeeprepala3-gmailcoms-projects.vercel.app", // Allow any origin to access the API
   credentials: true             
 }));
 
