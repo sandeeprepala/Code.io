@@ -21,7 +21,7 @@ const Collaboration = () => {
   const handleJoinRoom = () => {
     if (roomId.trim() === '') return;
     navigate(`/codeColab/${roomId}`); // ✅ navigate on button click
-    window.location.reload();
+    // window.location.reload();
   };
 
   return (
