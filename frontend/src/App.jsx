@@ -10,18 +10,18 @@ import Register from './components/Register';
 import Logout from './components/Logout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProblemById from './pages/ProblemById';
-// import CodeColab from './pages/CodeColab';
-// import Collaboration from './pages/Collaboration';
-// import io from'socket.io-client';
+import CodeColab from './pages/CodeColab';
+import Collaboration from './pages/Collaboration';
+import io from'socket.io-client';
 import { useEffect } from 'react';
 
-// const socket = io(import.meta.env.VITE_BACKEND_URL);
+const socket = io(import.meta.env.VITE_BACKEND_URL);
 function App() {
-//   useEffect(() => {
-//   return () => {
-//     socket.disconnect();
-//   };
-// }, []);
+  useEffect(() => {
+  return () => {
+    socket.disconnect();
+  };
+}, []);
 
   return (
     <>
@@ -36,8 +36,8 @@ function App() {
           <Route path="/logout" element={<Logout/>} />
           <Route path="/profile" element={<Profile/>} />
           <Route path="/problems/:id" element={<ProblemById/>} />
-          {/* <Route path="/codeColab/:roomId" element={<CodeColab />} />
-          <Route path="/collaboration" element={<Collaboration/>} /> */}
+          <Route path="/codeColab/:roomId" element={<CodeColab />} />
+          <Route path="/collaboration" element={<Collaboration/>} />
         
       </Routes>
         <Footer/>
