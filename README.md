@@ -1,96 +1,60 @@
-# Code.io 🧑‍💻
+# 🚀 Code.io — Online Coding Platform with Collaborative Rooms
 
-**Code.io** is an online coding platform inspired by LeetCode and Codeforces. It allows users to solve coding problems in multiple languages, run test cases, and get verdicts using the Judge0 API. It also includes user authentication, problem tracking, and real-time collaboration support.
+**Code.io** is a modern online coding platform inspired by LeetCode and Google Docs.  
+It lets you practice coding problems, execute code, and solve questions — plus collaborate with others in real-time using live coding rooms.
 
-## 🌐 Features
+---
 
-- 👨‍💻 Monaco Code Editor (VS Code experience)
-- 🧪 Run code against custom test cases
-- ✅ Judge0 API integration for code execution
-- 🔐 Authentication using JWT
-- 📊 Track solved problems
-- 🌍 Support for multiple languages: JavaScript, Python, C++, Java
-- 📦 MongoDB-based backend with Express.js
-- 🎯 Submissions with verdicts and test case results
-- 🎧 Collaborative features (Video/Audio chat - optional extension)
+## 📌 **Features**
 
-## 🛠️ Tech Stack
+✅ **LeetCode-like coding problems:** Solve curated problems with custom test cases  
+✅ **Code Execution:** Submit and run code using an online compiler (Judge0 API)  
+✅ **Problem Statements:** Hints, constraints, and multiple difficulty levels  
+✅ **Rooms for Collaboration:** Real-time pair programming with Socket.IO  
+✅ **Monaco Editor:** VS Code-like syntax highlighting and auto-complete  
+✅ **Authentication:** User login & problem history 
+✅ **Clean UI:** Built with React =
+✅ **Fully deployed:** Frontend & backend ready for production
 
-### Frontend:
-- React.js
-- Tailwind CSS
-- Axios
-- React Router
+---
+
+## ⚙️ **Tech Stack**
+
+**Frontend:**  
+- React.js (Vite)
 - Monaco Editor
+- Socket.IO Client
+- Tailwind CSS
 
-### Backend:
-- Node.js
-- Express.js
-- MongoDB
-- JWT (Authentication)
+**Backend:**  
+- Node.js & Express.js
+- Socket.IO Server
+- MongoDB (problem storage, user submissions)
+- REST API for code execution (Judge0)
 
-### Third-Party APIs:
-- [Judge0 API](https://judge0.com/) – for code compilation and execution
+**Deployment:**  
+- Frontend: Vercel / Netlify  
+- Backend: Render / Railway / Heroku
 
-## 🚀 Setup Instructions
+---
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/sandeeprepala/Code.io.git
-cd Code.io
-2. Install Dependencies
-bash
-Copy
-Edit
-# For frontend
-cd frontend
-npm install
+## 🗂️ **Project Structure**
 
-# For backend
-cd ../backend
-npm install
-3. Configure Environment Variables
-Create a .env file in both frontend and backend directories.
-
-Example .env (Backend)
-env
-Copy
-Edit
-PORT=5000
-MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_jwt_secret
-Example .env (Frontend)
-env
-Copy
-Edit
-VITE_JUDGE0_API_URL=https://judge0-ce.p.rapidapi.com
-VITE_JUDGE0_API_KEY=your_judge0_api_key
-🔐 Ensure your .env files are listed in .gitignore.
-
-4. Run the Application
-Start Backend
-bash
-Copy
-Edit
-npm start
-Start Frontend
-bash
-Copy
-Edit
-npm run dev
-📸 Screenshots
-You can add some screenshots or GIFs of the editor, test results, etc.
-
-📌 TODO / Future Enhancements
-Add dark/light mode toggle
-
-Add leaderboard for users
-
-Add support for custom test cases input/output
-
-Add real-time calling using WebRTC and Socket.IO
-
-Admin panel for problem management
-
-🧑‍💻 Author
-Made with ❤️ by Sandeep Repala
+```plaintext
+code.io/
+ ├── client/                # React frontend
+ │   ├── src/
+ │   │   ├── components/    # Editor, Room, ProblemPage
+ │   │   ├── pages/         # Home, Problems List, Editor, Room Join
+ │   │   ├── App.js
+ │   │   └── index.js
+ ├── server/                # Node backend
+ │   ├── index.js
+ │   ├── socket.js          # Collaborative Rooms logic (Socket.IO)
+ │   ├── models/            # Mongoose models: Problem, Submission, User
+ │   ├── routes/            # API: Problems, Submissions, Auth
+ │   ├── controllers/       # Business logic
+ │   ├── .env               # Env config
+ │   ├── package.json
+ ├── README.md
+ ├── package.json
