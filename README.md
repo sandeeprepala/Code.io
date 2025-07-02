@@ -24,7 +24,6 @@ It lets you practice coding problems, execute code, and solve questions — plus
 - React.js (Vite)
 - Monaco Editor
 - Socket.IO Client
-- Tailwind CSS
 
 **Backend:**  
 - Node.js & Express.js
