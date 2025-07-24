@@ -32,8 +32,8 @@ It lets you practice coding problems, execute code, and solve questions — plus
 - REST API for code execution (Judge0)
 
 **Deployment:**  
-- Frontend: Vercel / Netlify  
-- Backend: Render / Railway / Heroku
+- Frontend: Vercel   
+- Backend: Render 
 
 ---
 
